@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selezione comuni</title>
+    </head>
+    <body>
+        <h1>Selezione a cascata comuni</h1>
+        <!-- Nuovo attributo: onchange. Fa qualcosa quando l'elemento cambia. -->
+        Provincia: <select name="provincia" id="provincia" onchange="loadComuni()">
+            <option value="none">-- Scegli la provincia --</option>
+        </select>
+        <br>Comune: <select name="comune" id="comune">
+            <option value="none">-- Scegli il comune --</option>
+        </select>
+        <script src="js/main.js"></script>
+    </body>
+</html>
